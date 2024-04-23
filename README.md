@@ -11,7 +11,9 @@ _2.1.1. Objective_
 	- Identify opportunities to reduce stockouts and excess inventory.
 	- Streamline the procurement and production processes to improve efficiency.
 	- Develop a sustainable inventory management strategy for future growth.
-_2.1.2. Tasks need to be performed_
+
+_2.1.2. Tasks need to be performed
+
 - ABC analysis: Classify inventory items based on their value and importance to prioritize management efforts.
 - Lead time analysis: Calculate the lead time for each product.
 - Reorder point analysis: Calculate the reorder point for each product to avoid stockouts.
@@ -20,7 +22,7 @@ _2.1.2. Tasks need to be performed_
 
 Answer the question: What metrics to measure?
 
-_2.2.1. ABC analysis techniques in inventory management
+_2.2.1. ABC analysis techniques in inventory management_
 
 **ABC analysis technique** is the principle of analyzing stored goods into 3 basic groups. 
 - Products that make 70% of the sales are in Class A
