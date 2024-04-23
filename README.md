@@ -1,4 +1,5 @@
 # Inventory Analysis Case Study
+This article mainly performs cleaning and a short analysis of the company's inventory situation using Microsoft Server SQL.
 ## 1. Background
 Any Manufacturing Company is a medium-sized manufacturing company that produces electronic components. They have a wide range of products and maintain an inventory of raw materials, work-in-progress (WIP), and finished goods. The company has been experiencing issues with inventory management, including stockouts, excess inventory, and increased carrying costs. The management team wants to conduct an inventory analysis to identify areas for improvement and optimize their inventory management practices.
 ## 2. Analysis phase
@@ -839,3 +840,40 @@ FROM abc_group
 WHERE store_id = 3
 ORDER BY store_id, total_dollars_after_tax DESC
 ```
+
+## 2.5. Step 5: Conclusion
+**Inventory analysis:**
+- Smirnoff 80 Proof had the most inventory at the beginning of the year but by the end of the year had fallen out of the top 10. Smirnoff 80 Proof seems to have undergone a brand update or rebranding 
+- Jack Daniels No 7 Black rose from 6th at the beginning of the year to 2nd, Ketel One Vodka from 10th to 6th, Jameson Irish Whiskey was not in the top 10 at the beginning of the year but was in 8th at the end of the year. This could imply an increased demand or higher restocking levels for these products during the year.
+- The remaining products do not have much change in ranking.
+
+--> **The overall high consistency among the top products suggests steady demand and effective inventory replenishment strategies for popular items.**
+
+**Inventory Challenges:**
+- **The company should adjust the data to make it consistent so that a product is only represented by 1 brand_id**.
+- Store_id 80 does not exist but the company placed the new store_id directly at number 81. The company needs to **set store_id according to the rules** for later inspection
+- There are products that were purchased and sold during the year but were not updated in the inventory table. **The company needs to introduce a more frequent and complete update policy.**
+
+**Sales analysis:**
+- **Smirnoff 80 Proof** had the most total sales in the first 2 months but by the end of the year, the inventory was not in the top 10. **The company may have inventory problems with this product**.
+- Some products are in the top sales but not in the top 10 inventory: Dr. McGillicuddy's Mentholmnt, Yukon Jack, Smirnoff Raspberry Vodka, Tito's Handmade Vodka, Canadian Club. **Consider increasing the inventory of these products and decreasing the inventory of some products are in the top inventory but not top sales**: Bacardi Superior Rum, Baileys Irish Cream, Ketel One Vodka, Kahlua, Jameson Irish Whiskey, Gray Goose Vodka.
+- The results show that in the first 2 months of the year, the store with the highest revenue is store 34. The store with the lowest revenue is store 3.
+- **February sales dropped seriously. More specific analysis is needed to find the cause of the decrease**.
+- The city of Mountmend generated the largest total revenue. Knife’s edge city brings in the lowest total revenue.
+
+**Purchasing analysis:**
+- DIAGEO NORTH AMERICA INC stands out as the top vendor with the highest total cost, amounting to 50,959,796.85 US dollars.
+- The following two vendors,  MARTIGNETTI COMPANIES' and 'JIM BEAM BRANDS COMPANY', have notable purchase costs of 27,861,690.02 and 24,203,151.05, respectively.
+- The top 3 companies by quantity are also the top 3 companies by total cost.
+- It's interesting to see that the top 5 vendors have a significant difference in their purchase costs, with **'DIAGEO NORTH AMERICA INC' nearly leading double total cost from the vendor in the second position.**
+
+**Combining sales and purchasing analysis:**
+- The companies in the top 10 best sellers by volume are also the companies in the top 10 by revenue, except for two brands, Crown Royal and Smirnoff 80 Proof. Most products sell more than half of the purchased amount.
+- Although **Crown Royal has a relatively low sales volume, it is in the top 10 brands with the highest revenue**, this can be a high-end brand. Meanwhile, **Smirnoff 80 Proof with the largest sales volume of 43,423 has a rather modest position in the top 12 in terms of revenue**.
+- **Capt Morgan Spiced Rum and Jack Daniels No 7 Black** make an outstanding impression when they are in the top 2 brands bringing in the largest revenue, each **brand accounting for 1.8% and 1.7% of total revenue respectively.**
+
+**Stocking Strategies:**
+- Each store can consider which additional products they need to order by looking at the order_quantity column. **If the order_quantity column > 0, you need to order more of that product immediately.**
+
+
+
