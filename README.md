@@ -618,9 +618,9 @@ ORDER BY end_on_hand DESC
 ![image](https://github.com/nhungly2805/inventory-analysis/assets/128270865/e1d310cf-e6ef-41d0-a1e8-898a0ebabd57)
 
  
-	- Smirnoff 80 Proof had the most inventory at the beginning of the year but by the end of the year had fallen out of the top 10. Smirnoff 80 Proof seems to have undergone a brand update or rebranding 
-	- Jack Daniels No 7 Black rose from 6th at the beginning of the year to 2nd, Ketel One Vodka from 10th to 6th, Jameson Irish Whiskey was not in the top 10 at the beginning of the year but was in 8th at the end of the year. This could imply an increased demand or higher restocking levels for these products during the year.
-	- The remaining products do not have much change in ranking.
+- Smirnoff 80 Proof had the most inventory at the beginning of the year but by the end of the year had fallen out of the top 10. Smirnoff 80 Proof seems to have undergone a brand update or rebranding 
+- Jack Daniels No 7 Black rose from 6th at the beginning of the year to 2nd, Ketel One Vodka from 10th to 6th, Jameson Irish Whiskey was not in the top 10 at the beginning of the year but was in 8th at the end of the year. This could imply an increased demand or higher restocking levels for these products during the year.
+- The remaining products do not have much change in ranking.
 --> **The overall high consistency among the top products suggests steady demand and effective inventory replenishment strategies for popular items.**
 
 _2.4.2. Sales Analysis_
@@ -638,9 +638,9 @@ ORDER BY total_sales_quantity DESC
 
 ![image](https://github.com/nhungly2805/inventory-analysis/assets/128270865/4d02a896-1831-4315-b148-7ddf54aa47e4)
 
-	- **Smirnoff 80 Proof had the most total sales** in the first 2 months but by the end of the year, the inventory was not in the top 10. **The company may have inventory problems with this product.**
+- **Smirnoff 80 Proof had the most total sales** in the first 2 months but by the end of the year, the inventory was not in the top 10. **The company may have inventory problems with this product.**
 
-	- Some products are in the top sales but not in the top 10 inventory: Dr. McGillicuddy's Mentholmnt, Yukon Jack, Smirnoff Raspberry Vodka, Tito's Handmade Vodka, Canadian Club. **Consider increasing the inventory of these products and decreasing the inventory of some products that are in the top inventory but not top sales**: Bacardi Superior Rum, Baileys Irish Cream, Ketel One Vodka, Kahlua, Jameson Irish Whiskey, Gray Goose Vodka.
+- Some products are in the top sales but not in the top 10 inventory: Dr. McGillicuddy's Mentholmnt, Yukon Jack, Smirnoff Raspberry Vodka, Tito's Handmade Vodka, Canadian Club. **Consider increasing the inventory of these products and decreasing the inventory of some products that are in the top inventory but not top sales**: Bacardi Superior Rum, Baileys Irish Cream, Ketel One Vodka, Kahlua, Jameson Irish Whiskey, Gray Goose Vodka.
 
 - Sales by store_id:
 
@@ -725,10 +725,10 @@ ORDER BY total_dollars DESC
 
 ![image](https://github.com/nhungly2805/inventory-analysis/assets/128270865/c93bea1a-7893-406b-a759-aef1148b9f66)
 
-	- DIAGEO NORTH AMERICA INC stands out as the top vendor with the highest total cost, amounting to 50,959,796.85 US dollars.
-	- The following two vendors,  MARTIGNETTI COMPANIES' and 'JIM BEAM BRANDS COMPANY', have notable purchase costs of 27,861,690.02 and 24,203,151.05, respectively.
-	- The top 3 companies by quantity are also the top 3 companies by total cost.
-	- It's interesting to see that the top 5 vendors have a significant difference in their purchase costs, with 'DIAGEO NORTH AMERICA INC' nearly leading double total cost from the vendor in the second position.
+- DIAGEO NORTH AMERICA INC stands out as the top vendor with the highest total cost, amounting to 50,959,796.85 US dollars.
+- The following two vendors,  MARTIGNETTI COMPANIES' and 'JIM BEAM BRANDS COMPANY', have notable purchase costs of 27,861,690.02 and 24,203,151.05, respectively.
+- The top 3 companies by quantity are also the top 3 companies by total cost.
+- It's interesting to see that the top 5 vendors have a significant difference in their purchase costs, with **'DIAGEO NORTH AMERICA INC' nearly leading double total cost from the vendor in the second position**.
 
 _2.4.4. Combine analysis of sales and purchasing tables_
 
@@ -757,9 +757,9 @@ ORDER BY total_dollars_after_tax DESC
 
 ![image](https://github.com/nhungly2805/inventory-analysis/assets/128270865/c8ebf331-4c38-4801-b2c3-ab44f7de9a95)
 
-	- **The companies in the top 10 best sellers by volume are also the companies in the top 10 by revenue, except for two brands, Crown Royal and Smirnoff 80 Proof. Most products sell more than half of the purchased amount.**
-	- Although Crown Royal has a relatively low sales volume, it is in the top 10 brands with the highest revenue, this can be a high-end brand. Meanwhile, Smirnoff 80 Proof with the largest sales volume of 43,423 has a rather modest position in the top 12 in terms of revenue.
-	- Capt Morgan Spiced Rum and Jack Daniels No 7 Black make an outstanding impression when they are in the top 2 brands bringing in the largest revenue, **each brand accounting for 1.8% and 1.7% of total revenue respectively**.
+- **The companies in the top 10 best sellers by volume are also the companies in the top 10 by revenue, except for two brands, Crown Royal and Smirnoff 80 Proof. Most products sell more than half of the purchased amount.**
+- Although Crown Royal has a relatively low sales volume, it is in the top 10 brands with the highest revenue, this can be a high-end brand. Meanwhile, Smirnoff 80 Proof with the largest sales volume of 43,423 has a rather modest position in the top 12 in terms of revenue.
+- Capt Morgan Spiced Rum and Jack Daniels No 7 Black make an outstanding impression when they are in the top 2 brands bringing in the largest revenue, **each brand accounting for 1.8% and 1.7% of total revenue respectively**.
 
 _2.4.5. Lead time và reorder point analysis_
 
