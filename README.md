@@ -1,5 +1,6 @@
 # Inventory Analysis Case Study
 This article mainly performs cleaning and a short analysis of the company's inventory situation using Microsoft Server SQL.
+Data sources: https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study/data
 ## 1. Background
 Any Manufacturing Company is a medium-sized manufacturing company that produces electronic components. They have a wide range of products and maintain an inventory of raw materials, work-in-progress (WIP), and finished goods. The company has been experiencing issues with inventory management, including stockouts, excess inventory, and increased carrying costs. The management team wants to conduct an inventory analysis to identify areas for improvement and optimize their inventory management practices.
 ## 2. Analysis phase
