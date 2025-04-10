@@ -1,4 +1,6 @@
-﻿UPDATE [InvoicePurchases12312016]
+﻿# ackmakcsmkv
+
+UPDATE [InvoicePurchases12312016]
 SET ["VendorName"] = CONCAT(["VendorName"], ["InvoiceDate"]), 
 	["InvoiceDate"] = ["PONumber"], 
 	["PONumber"] = ["PODate"],
