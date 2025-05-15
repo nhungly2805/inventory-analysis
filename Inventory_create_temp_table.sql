@@ -1,4 +1,15 @@
-﻿
+UPDATE [InvoicePurchases12312016]
+SET ["VendorName"] = CONCAT(["VendorName"], ["InvoiceDate"]), 
+	["InvoiceDate"] = ["PONumber"], 
+	["PONumber"] = ["PODate"],
+	["PODate"] = ["PayDate"],
+	["PayDate"] = ["Quantity"],
+	["Quantity"] = ["Dollars"],
+	["Dollars"] = ["Freight"],
+	["Freight"] = LEFT(["Approval"], CHARINDEX(',', ["Approval"]) - 1),
+	["Approval"] =  RIGHT(["Approval"], LEN(["Approval"]) - CHARINDEX(',', ["Approval"]))
+WHERE ["VendorNumber"] IN (3950, 2, 7240, 8664)
+
 UPDATE [PurchasesFINAL12312016]
 	SET ["VendorName"] = CONCAT(["VendorName"], ["PONumber"]), 
 	["PONumber"] = ["PODate"],
